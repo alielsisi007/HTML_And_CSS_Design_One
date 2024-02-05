@@ -189,11 +189,25 @@ body {
   position: absolute;
   flex-direction: column;
   width: 50vh;
-  top: 0;
+  top: 50px;
   right: 0;
   gap: 20px;
   animation: slideFromLeft 0.5s forwards;
   -webkit-animation: slideFromLeft 0.5s forwards;
+  z-index: 5;
+}
+
+@media (max-width: 767px) {
+  .header .container ul {
+    width: 30vh;
+    height: 80vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 969px) {
+  .header .container ul {
+    width: 40vh;
+    height: 80vh;
+  }
 }
 
 .header .container ul li {
@@ -570,8 +584,8 @@ body {
 }
 @media (max-width: 767px) {
   .contact .footr {
+    scale: 0.8;
     margin-left: 0px;
-    font-size: 18px;
   }
 }
 
